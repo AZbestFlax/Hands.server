@@ -15,6 +15,7 @@
         <spring-data-jpa.version>1.10.1.RELEASE</spring-data-jpa.version>
         <postgresql.version>9.1-901.jdbc4</postgresql.version>
         <hibernate-entitymanager.version>5.1.0.Final</hibernate-entitymanager.version>
+        <commons-dbcp2.version>2.1.1</commons-dbcp2.version>
     </properties>
 
     <dependencies>
@@ -23,6 +24,9 @@
             <artifactId>spring-core</artifactId>
             <version>${spring.version}</version>
         </dependency>
+
+        <!-- WEB interface -->
+
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
@@ -33,6 +37,9 @@
             <artifactId>javax.servlet-api</artifactId>
             <version>${javax.servlet-api.version}</version>
         </dependency>
+
+        <!-- Data Base -->
+
         <dependency>
             <groupId>org.springframework.data</groupId>
             <artifactId>spring-data-jpa</artifactId>
@@ -47,6 +54,11 @@
             <groupId>postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <version>${postgresql.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-dbcp2</artifactId>
+            <version>${commons-dbcp2.version}</version>
         </dependency>
     </dependencies>
 
